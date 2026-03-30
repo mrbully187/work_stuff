@@ -1,0 +1,98 @@
+Raspberry Pi LAMP + PLC Logging Setup (CUSTOM VERSION)
+
+PURPOSE: This setup is tailored for: - Allen Bradley CompactLogix PLC -
+Python (pylogix) logging - MariaDB database storage - Web dashboard
+access
+
+================================================== PART 1 — CLEAN REMOVE
+(RESET SYSTEM) ==================================================
+
+Stop services: sudo systemctl stop apache2 sudo systemctl stop mariadb
+sudo systemctl stop mysql
+
+Remove packages: sudo apt purge apache2* -y sudo apt purge
+mariadb-server mariadb-client -y sudo apt purge mysql-server
+mysql-client -y sudo apt purge php* -y
+
+Remove leftovers: sudo rm -rf /var/www/html sudo rm -rf /etc/apache2
+sudo rm -rf /var/lib/mysql
+
+Clean system: sudo apt autoremove -y sudo apt autoclean
+
+Reboot: sudo reboot
+
+================================================== PART 2 — INSTALL LAMP
+STACK ==================================================
+
+sudo apt update sudo apt install apache2 mariadb-server php
+libapache2-mod-php php-mysql php-cli php-curl php-zip php-gd
+php-mbstring php-xml -y
+
+Enable + start: sudo systemctl enable apache2 sudo systemctl enable
+mariadb sudo systemctl start apache2 sudo systemctl start mariadb
+
+Secure DB: sudo mysql_secure_installation
+
+================================================== PART 3 — INSTALL
+phpMyAdmin (WEB UI) ==================================================
+
+sudo apt install phpmyadmin -y
+
+Select: - apache2 - YES for dbconfig-common
+
+Link: sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+
+Restart: sudo systemctl restart apache2
+
+================================================== PART 4 — CREATE
+DATABASE FOR PLC LOGGING
+==================================================
+
+Login: sudo mysql -u root -p
+
+Create DB: CREATE DATABASE gantry_logs;
+
+Use DB: USE gantry_logs;
+
+Create table: CREATE TABLE gantry_axis_log ( id INT AUTO_INCREMENT
+PRIMARY KEY, timestamp DATETIME NOT NULL, axis VARCHAR(5), old_preset
+FLOAT, new_preset FLOAT );
+
+================================================== PART 5 — PYTHON
+LOGGER CONNECTION ==================================================
+
+Install Python packages: pip install pylogix mysql-connector-python
+
+Example connection snippet:
+
+import mysql.connector
+
+conn = mysql.connector.connect( host=“localhost”, user=“root”,
+password=“YOUR_PASSWORD”, database=“gantry_logs” )
+
+cursor = conn.cursor()
+
+Insert example: cursor.execute( “INSERT INTO gantry_axis_log (timestamp,
+axis, old_preset, new_preset) VALUES (NOW(), %s, %s, %s)”, (“X”, 100,
+120) ) conn.commit()
+
+================================================== PART 6 — TEST WEB
+ACCESS ==================================================
+
+Apache: http://
+
+phpMyAdmin: http:///phpmyadmin
+
+================================================== PART 7 — YOUR SYSTEM
+FLOW ==================================================
+
+PLC (CompactLogix) ↓ Python (pylogix) ↓ MariaDB (Pi) ↓ phpMyAdmin / PHP
+Dashboard
+
+================================================== OPTIONAL NEXT STEPS
+==================================================
+
+-   Add location names to table
+-   Add servo current logging
+-   Build PHP dashboard
+-   Auto-start Python logger on boot
