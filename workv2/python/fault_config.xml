@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FaultConfiguration>
+    <Signals>
+
+        <!-- Communication Faults -->
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>0</Bit>
+            <Name>Main point IO Module Status</Name>
+            <Description>Main point IO Module Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>1</Bit>
+            <Name>West point IO Module Status</Name>
+            <Description>West point IO Module Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>2</Bit>
+            <Name>East point IO Module Status</Name>
+            <Description>East point IO Module Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>3</Bit>
+            <Name>GearFit Gantry Z Axis Drive Status</Name>
+            <Description>GearFit Z Axis Drive Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>4</Bit>
+            <Name>GearFit Ganty X Axis Drive Status</Name>
+            <Description>GearFit Ganty X Axis Drive Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>5</Bit>
+            <Name>West Ganty Z Axis Drive Status</Name>
+            <Description>West Ganty Z Axis Drive Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>6</Bit>
+            <Name>West Ganty X Axis Drive Status</Name>
+            <Description>West Ganty X Axis Drive Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>7</Bit>
+            <Name>East Ganty Z Axis Drive Status</Name>
+            <Description>East Ganty Z Axis Drive Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>8</Bit>
+            <Name>East Ganty X Axis Drive Status</Name>
+            <Description>East Ganty X Axis Drive Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>9</Bit>
+            <Name>Gage Gantry 1 IO Module Status</Name>
+            <Description>Gage Gantry 1 IO Module Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>10</Bit>
+            <Name>GearFit Ganty 2 IO Module Status</Name>
+            <Description>Gage Ganty 2 IO Module Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>11</Bit>
+            <Name>West Conveyor IO Module Status</Name>
+            <Description>West Conveyor IO Module Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>12</Bit>
+            <Name>East Conveyor IO Module Status</Name>
+            <Description>East Conveyor IO Module Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>13</Bit>
+            <Name>GearFit Ganty 1 IO Module Status</Name>
+            <Description>GearFit Ganty 1 IO Module Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>14</Bit>
+            <Name>West Gantry IO Module 1 Status</Name>
+            <Description>Westt Gantry IO Module 1 Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>15</Bit>
+            <Name>West Gantry IO Module 1 Status</Name>
+            <Description>GearFit Ganty 1 IO Module Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>16</Bit>
+            <Name>East Ganty IO Module 1 Status</Name>
+            <Description>East Ganty IO Module 1 Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>17</Bit>
+            <Name>East Ganty IO Module 2 Status</Name>
+            <Description>East Ganty IO Module 2 Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>18</Bit>
+            <Name>Gage Z Axis Status</Name>
+            <Description>Gage Z Axis Status Offline</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.comFault[0]</TagName>
+            <Bit>19</Bit>
+            <Name>Gage X Axis Status</Name>
+            <Description>Gage X Axis Status Offline</Description>
+        </Signal>
+
+        <!-- Saftey Faults -->
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>0</Bit>
+            <Name>Door 1 E-Stop Status</Name>
+            <Description>Door 1 E-Stop Status Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>1</Bit>
+            <Name>Door 1 E-Stop Status</Name>
+            <Description>Door 1 E-Stop Status Pressed</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>6</Bit>
+            <Name>Door 2 E-Stop Status</Name>
+            <Description>Door 2 E-Stop Status Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>7</Bit>
+            <Name>Door 2 E-Stop Status</Name>
+            <Description>Door 2 E-Stop Status Pressed</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>12</Bit>
+            <Name>Door 1 Gate Status</Name>
+            <Description>Door 1 Gate Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>13</Bit>
+            <Name>Door 1 Gate Status</Name>
+            <Description>Door 1 Gate Open</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>18</Bit>
+            <Name>Door 2 Gate Status</Name>
+            <Description>Door 2 Gate Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>19</Bit>
+            <Name>Door 2 Gate Status</Name>
+            <Description>Door 2 Gate Open</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>24</Bit>
+            <Name>GearFit E-Stop Status</Name>
+            <Description>GearFit E-Stop Status Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>25</Bit>
+            <Name>GearFit E-Stop Status</Name>
+            <Description>GearFit E-Stop Reset Required</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>28</Bit>
+            <Name>GearFit Ganty Gate Status</Name>
+            <Description>GearFit Ganty Gate Status Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[0]</TagName>
+            <Bit>29</Bit>
+            <Name>GearFit Ganty Gate Status</Name>
+            <Description>GearFit Ganty Gate Reset Required</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[1]</TagName>
+            <Bit>0</Bit>
+            <Name>West Ganty Gate Status</Name>
+            <Description>West Ganty Gate Status Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[1]</TagName>
+            <Bit>1</Bit>
+            <Name>West Ganty Gate Status</Name>
+            <Description>West Ganty Gate Reset Required</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[1]</TagName>
+            <Bit>5</Bit>
+            <Name>East Ganty Gate Status</Name>
+            <Description>East Ganty Gate Status Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Cell.SafteyFault[1]</TagName>
+            <Bit>6</Bit>
+            <Name>East Ganty Gate Status</Name>
+            <Description>East Ganty Gate Reset Required</Description>
+        </Signal>
+
+        <!-- GearFit Gantry Faults And Positioning Faults-->
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[3]</TagName>
+            <Bit>0</Bit>
+            <Name>GearFit Gantry Gripper 1 Status</Name>
+            <Description>GearFit Gantry Gripper 1 Advancing Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[3]</TagName>
+            <Bit>1</Bit>
+            <Name>GearFit Gantry Gripper 1 Status</Name>
+            <Description>GearFit Gantry Gripper 1 Returining Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[3]</TagName>
+            <Bit>2</Bit>
+            <Name>GearFit Gantry Gripper 1 Status</Name>
+            <Description>GearFit Gantry Gripper 1 Switch Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[3]</TagName>
+            <Bit>3</Bit>
+            <Name>GearFit Gantry Gripper 1 Status</Name>
+            <Description>GearFit Gantry Gripper 1 Fault Not Clear</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[3]</TagName>
+            <Bit>7</Bit>
+            <Name>GearFit Gantry Gripper 2 Status</Name>
+            <Description>GearFit Gantry Gripper 2 Advancing Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[3]</TagName>
+            <Bit>8</Bit>
+            <Name>GearFit Gantry Gripper 2 Status</Name>
+            <Description>GearFit Gantry Gripper 2 Returining Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[3]</TagName>
+            <Bit>9</Bit>
+            <Name>GearFit Gantry Gripper 2 Status</Name>
+            <Description>GearFit Gantry Gripper 2 Switch Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[3]</TagName>
+            <Bit>10</Bit>
+            <Name>GearFit Gantry Gripper 2 Status</Name>
+            <Description>GearFit Gantry Gripper 2 Fault Not Clear</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[3]</TagName>
+            <Bit>14</Bit>
+            <Name>GearFit Gantry Rotate Status</Name>
+            <Description>GearFit Gantry Rotate Advancing Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[3]</TagName>
+            <Bit>15</Bit>
+            <Name>GearFit Gantry Rotate Status</Name>
+            <Description>GearFit Gantry Rotate Returining Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[3]</TagName>
+            <Bit>16</Bit>
+            <Name>GearFit Gantry Rotate Status</Name>
+            <Description>GearFit Gantry Rotate Switch Fault</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[1]</TagName>
+            <Bit>1</Bit>
+            <Name>GearFit Gantry FACS Status</Name>
+            <Description>GearFit Gantry FACS Check</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[1]</TagName>
+            <Bit>2</Bit>
+            <Name>GearFit Gantry FACS Status</Name>
+            <Description>GearFit Gantry FACS Fail</Description>
+        </Signal>
+
+  <!--Multi wheel grinder-->
+
+        <Signal>
+            <TagName>MultiWheelGrinder.Fault[0]</TagName>
+            <Bit>0</Bit>
+            <Name>Multi Wheel Grinder Status</Name>
+            <Description>Multi Wheel Grinder Start Fault</Description>
+        </Signal>
+
+        <Signal>
+             <TagName>MultiWheelGrinder.Fault[0]</TagName>
+            <Bit>1</Bit>
+            <Name>Multi Wheel Grinder Status</Name>
+            <Description>Multi Wheel Grinder Cycle Fault</Description>
+        </Signal>
+
+        <Signal>
+             <TagName>MultiWheelGrinder.Fault[0]</TagName>
+            <Bit>3</Bit>
+            <Name>Multi Wheel Grinder Status</Name>
+            <Description>Multi Wheel Grinder Move Fault</Description>
+        </Signal>
+        
+        <Signal>
+             <TagName>MultiWheelGrinder.Fault[0]</TagName>
+            <Bit>4</Bit>
+            <Name>Multi Wheel Grinder Status</Name>
+            <Description>Multi Wheel Grinder Other Fault</Description>
+        </Signal>
+
+  <!--Gear Fit grinder-->
+
+        <Signal>
+            <TagName>MultiWheelGrinder.Fault[0]</TagName>
+            <Bit>0</Bit>
+            <Name>Multi Wheel Grinder Status</Name>
+            <Description>Multi Wheel Grinder Start Fault</Description>
+        </Signal>
+
+        <Signal>
+             <TagName>MultiWheelGrinder.Fault[0]</TagName>
+            <Bit>1</Bit>
+            <Name>Multi Wheel Grinder Status</Name>
+            <Description>Multi Wheel Grinder Cycle Fault</Description>
+        </Signal>
+
+        <Signal>
+             <TagName>MultiWheelGrinder.Fault[0]</TagName>
+            <Bit>3</Bit>
+            <Name>Multi Wheel Grinder Status</Name>
+            <Description>Multi Wheel Grinder Move Fault</Description>
+        </Signal>
+        
+        <Signal>
+             <TagName>MultiWheelGrinder.Fault[0]</TagName>
+            <Bit>4</Bit>
+            <Name>Multi Wheel Grinder Status</Name>
+            <Description>Multi Wheel Grinder Other Fault</Description>
+        </Signal>
+
+        <!--Gauge Gantry-->
+
+        <Signal>
+            <TagName>Gage.Fault[1]</TagName>
+            <Bit>0</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gage Station X Axis Not Absolute Homed</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Gage.Fault[1]</TagName>
+            <Bit>1</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gage Station Z Axis Not Absolute Homed</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Gage.Fault[1]</TagName>
+            <Bit>3</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>No Reply From FACS</Description>
+        </Signal>
+        
+        <Signal>
+            <TagName>Gage.Fault[1]</TagName>
+            <Bit>4</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gearfit Barcoder Reader 3 No Reads In An Hour</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Gage.Fault[3]</TagName>
+            <Bit>0</Bit>
+            <Name>Gauge Gantry Gripper Status</Name>
+            <Description>Advancing Fault Side 1</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Gage.Fault[3]</TagName>
+            <Bit>1</Bit>
+            <Name>Gauge Gantry Gripper Status</Name>
+            <Description>Advancing Fault Side 2</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Gage.Fault[3]</TagName>
+            <Bit>2</Bit>
+            <Name>Gauge Gantry Gripper Status</Name>
+            <Description>Returning Fault Side 1</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Gage.Fault[3]</TagName>
+            <Bit>3</Bit>
+            <Name>Gauge Gantry Gripper Status</Name>
+            <Description>Returning Fault Side 2</Description>
+        </Signal>
+        
+        <Signal>
+            <TagName>Gage.Fault[3]</TagName>
+            <Bit>4</Bit>
+            <Name>Gauge Gantry Gripper Status</Name>
+            <Description>Switch Fault Side 1</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Gage.Fault[3]</TagName>
+            <Bit>5</Bit>
+            <Name>Gauge Gantry Gripper Status</Name>
+            <Description>Switch Fault Side 2</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Gage.Fault[3]</TagName>
+            <Bit>6</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Fault Not Clear</Description>
+        </Signal>
+<!--cam crowder fault left off here-->
+        <Signal>
+            <TagName>Gage.Fault[0]</TagName>
+            <Bit>1</Bit>
+            <Name>Gauge Gantry Cam Crowder Status</Name>
+            <Description>Gauge Gantry X Axis Did Not Reach Pick And Place Nest</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>Gage.Fault[0]</TagName>
+            <Bit>2</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry X Axis Did Not Reach Blowoff Nest</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[4]</TagName>
+            <Bit>3</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry X Axis Did Not Reach Gage Nest</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[4]</TagName>
+            <Bit>4</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry X Axis Did Not Reach Reject Rack</Description>
+        </Signal>
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[4]</TagName>
+            <Bit>5</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry X Axis Did Not Reach Load Rack</Description>
+        </Signal>
+
+        <!--GearFit Gantry-->
+
+        <Signal>
+            <TagName>GearFitGantry.Fault[4]</TagName>
+            <Bit>7</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry X Axis Did Not Reach Master Part Nest</Description>
+        </Signal>
+        <Signal>
+            <TagName>GearFitGantry.Fault[4]</TagName>
+            <Bit>8</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry Z Axis Did Not Reach Up and Clear, Unable To Move X Axis</Description>
+        </Signal>
+        <Signal>
+            <TagName>GearFitGantry.Fault[5]</TagName>
+            <Bit>0</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry Z Axis Did Not Reach Up And Clear Posistion</Description>
+        </Signal>
+        <Signal>
+            <TagName>GearFitGantry.Fault[5]</TagName>
+            <Bit>1</Bit>
+            <Name>GearFit Gantry Status</Name>
+            <Description>GearFit Gantry Z Axis Did Not Reach Load Rack</Description>
+        </Signal>
+        <Signal>
+            <TagName>GearFitGantry.Fault[5]</TagName>
+            <Bit>2</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry Z Axis Did Not Reach Mukti Wheel Pick</Description>
+        </Signal>
+        <Signal>
+            <TagName>GearFitGantry.Fault[5]</TagName>
+            <Bit>3</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry X Axis Did Not Reach Blowoff Nest</Description>
+        </Signal>
+        <Signal>
+            <TagName>GearFitGantry.Fault[54]</TagName>
+            <Bit>4</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry X Axis Did Not Reach Gage Nest</Description>
+        </Signal>
+        <Signal>
+            <TagName>GearFitGantry.Fault[5]</TagName>
+            <Bit>6</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry X Axis Did Not Reach Reject Rack</Description>
+        </Signal>
+        <Signal>
+            <TagName>GearFitGantry.Fault[5]</TagName>
+            <Bit>7</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry X Axis Did Not Reach Load Rack</Description>
+        </Signal>
+        <Signal>
+            <TagName>GearFitGantry.Fault[5]</TagName>
+            <Bit>8</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry X Axis Did Not Reach Master Part Nest</Description>
+        </Signal>
+        <Signal>
+            <TagName>GearFitGantry.Fault[5]</TagName>
+            <Bit>9</Bit>
+            <Name>Gauge Gantry Status</Name>
+            <Description>Gauge Gantry Z Axis Did Not Reach Up and Clear, Unable To Move X Axis</Description>
+        </Signal>
+    </Signals>
+</FaultConfiguration>
